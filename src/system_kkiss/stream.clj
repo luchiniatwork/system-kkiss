@@ -21,9 +21,9 @@
                  :value.serde (serde/serde value-serde-id)}))
 
 
-(defmethod ig/init-key ::consumer [_ {:keys [streams handler]}]
+(defmethod ig/init-key ::consumer [_ {:keys [streams handler opts]}]
   (info {:msg "Initializing Stream Consumer"})
-  (let [consumer (kkiss/consumer streams handler)]
+  (let [consumer (kkiss/consumer streams handler opts)]
     (kkiss/start! consumer)
     consumer))
 
