@@ -11,7 +11,7 @@
   com.taoensso/timbre                             {:mvn/version "5.1.2"}
 
   ;; Stream engine
-  net.clojars.luchiniatwork/kkiss                 {:mvn/version "0.3.0"}}
+  net.clojars.luchiniatwork/kkiss                 {:mvn/version "0.3.1"}}
 
  :aliases
  {:dev {:extra-paths ["dev"]
